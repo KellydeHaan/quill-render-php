@@ -1,11 +1,10 @@
-#README
+###Installation###
 
-##Installation
 Use composer
 
 `composer require oberon/quill-rendering`
 
-###Usage
+###Usage###
 
 ```
 $quillOps = "{\"ops\":[
@@ -29,7 +28,7 @@ try {
 Output should be: <p>Lorem ipsum dolor sit amet, <strong> consectetur</strong> adipiscing elit. Sed volutpat lectus non <em>pellentesque volutpat</em>. Phasellus in lectus pulvinar lorem vestibulum pellentesque.</p>
 
 
-###Most important components
+###Most important components###
 * **Renderer**
 
   Has function `render` which returns a string with formatted contents
@@ -38,7 +37,7 @@ Output should be: <p>Lorem ipsum dolor sit amet, <strong> consectetur</strong> a
 
   When given a Quill `op` and `renderers[]` return `true` if `op` was handled and an appropriate `Renderer` was added to provided `renderers[]`, `false` otherwise
   
-###Convenient classes/methods
+###Convenient classes/methods###
 `DefaultHtmlParsers::get()` returns a `Parser[]` for most basic HTML functionality including 
 * Bold 
 * Underline
@@ -52,7 +51,7 @@ Output should be: <p>Lorem ipsum dolor sit amet, <strong> consectetur</strong> a
 
 `HtmlParser::withQuill($quillOps)` will render the provided Quill-text with the DefaultHtmlParsers.
 
-###Notes
+###Notes###
 
 The `load` method immediately uses the provided `Parsers`, so Parsers should be set first.
 
