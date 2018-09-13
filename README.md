@@ -115,6 +115,8 @@ $quill = new RenderQuill();
 $quill->setParsers($parsers);
 ```
 
+Note: This code is an example and needs modification if you would use it. For example: this does not handle cases where the `attributes` contain `bold` and some other attribute.
+
 ### Notes
 
 The `load` method immediately uses the provided `Parsers`, so Parsers should be set first.
