@@ -100,7 +100,7 @@ class BoldParser implements Parser {
 }
 ```
 
-3. Register the Parser with the QuillRender
+3. Register the Parser with the RenderQuill
 
 ```
 //Start with the other HTML parsers
